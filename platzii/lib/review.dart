@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 class Review extends StatelessWidget {
 
-
+  String pathImage = "assets/img/people.jpg";
   String name = "Martin Escobar, ";
   String details = "1 review 5 photos, ";
   String comment = "There is an amazing place in Sri Lanka,";
 
-  Review(this.name, this.details, this.comment);
+  Review(this.pathImage, this.name, this.details, this.comment);
 
   @override
   Widget build(BuildContext context) {
@@ -80,12 +80,12 @@ class Review extends StatelessWidget {
       ),
       width: 80.0,
       height: 80.0,
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         shape: BoxShape.circle,
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: NetworkImage(
-            "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745'"
+          image:AssetImage(
+            pathImage
           ),
         ),
       ),

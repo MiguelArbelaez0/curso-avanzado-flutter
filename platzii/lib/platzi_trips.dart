@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platzi/headaer_appbar.dart';
 import 'home_trip.dart';
 import 'search_trips.dart';
 import 'profile_trips.dart';
@@ -33,7 +34,10 @@ class _PlatziTrips extends State<PlatziTrips> {
     // TODO: implement build
 
     return  Scaffold(
-      body: Text("test"),
+
+      body: widgetsChildren[
+        indexTap
+      ],
       bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(
             canvasColor: Colors.white,
