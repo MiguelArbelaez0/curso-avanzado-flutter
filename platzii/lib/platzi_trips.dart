@@ -33,7 +33,7 @@ class _PlatziTrips extends State<PlatziTrips> {
     // TODO: implement build
 
     return  Scaffold(
-      body: ,
+      body: Text("test"),
       bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(
             canvasColor: Colors.white,

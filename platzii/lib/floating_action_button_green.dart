@@ -12,13 +12,17 @@ class FloatingActionButtonGreen extends StatefulWidget {
 
 class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
 
-  void onPressedFav(){
-    Scaffold.of(context).showSnackBar(
-        SnackBar(
-          content: Text("Agregaste a tus Favoritos"),
-        )
+  void onPressedFav(BuildContext context){
+    SnackBar snackBar = SnackBar(
+      content: const Text('Yay! A SnackBar!'),
+      action: SnackBarAction(
+        label: 'Undo',
+        onPressed: () {
+          // Some code to undo the change.
+        },
+      ),
     );
-
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
   @override
@@ -28,7 +32,9 @@ class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
       backgroundColor: Color(0xFF11DA53),
       mini: true,
       tooltip: "Fav",
-      onPressed: onPressedFav,
+      onPressed: () {
+        onPressedFav(context);
+      },
       child: Icon(
           Icons.favorite_border
       ),

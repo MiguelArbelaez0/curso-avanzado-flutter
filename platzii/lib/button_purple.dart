@@ -6,15 +6,21 @@ class ButtonPurple extends StatelessWidget {
 
   ButtonPurple(this.buttonText);
 
+  final snackBar = SnackBar(
+    content: const Text('Yay! A SnackBar!'),
+    action: SnackBarAction(
+      label: 'Undo',
+      onPressed: () {
+        // Some code to undo the change.
+      },
+    ),
+  );
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Scaffold.of(context).showSnackBar(
-            SnackBar(
-              content: Text("Navegando"),
-            )
-        );
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
       },
       child: Container(
         margin: EdgeInsets.only(
