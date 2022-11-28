@@ -14,7 +14,7 @@ class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
 
   void onPressedFav(BuildContext context){
     SnackBar snackBar = SnackBar(
-      content: const Text('Yay! A SnackBar!'),
+      content: const Text("Agregaste a tus Favoritos"),
       action: SnackBarAction(
         label: 'Undo',
         onPressed: () {

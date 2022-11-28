@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'gradient_back.dart';
 import 'review_list.dart';
-import 'headaer_appbar.dart';
+import 'user/ui/screens/headaer_appbar.dart';
 import 'package:platzi/platzi_trips.dart';
 
 void main() => runApp(MyApp());

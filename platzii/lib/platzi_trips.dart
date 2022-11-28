@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi/headaer_appbar.dart';
+import 'package:platzi/user/ui/screens/headaer_appbar.dart';
 import 'home_trip.dart';
 import 'search_trips.dart';
 import 'profile_trips.dart';
